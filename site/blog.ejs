@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('blocks/head.ejs') %>
+  </head>
+  <body>
+    <main class="layout-main">
+      <div class="container">
+        <%- include('blocks/intro.ejs') %>
+
+        <div>
+          <div class="section-title">BLOG</div>
+
+          <% if (typeof posts !== 'undefined' && posts.length) { %>
+          <ul class="list">
+            <% posts.forEach(function(post){ %>
+            <li>
+              <a href="/blog/<%= post.slug %>" class="link-blue"
+                ><%= post.title %></a
+              >
+              <% if (post.date) { %> - <small><%= post.date %></small><% } %>
+            </li>
+            <% }) %>
+          </ul>
+          <% } else { %>
+          <div class="muted">No posts yet, check back later.</div>
+          <% } %>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/decrypt.js"></script>
+  </body>
+</html>

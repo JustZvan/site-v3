@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('blocks/head.ejs') %>
+    <title><%= title ? (title + ' — JustZvan') : 'Blog — JustZvan' %></title>
+  </head>
+  <body>
+    <main class="layout-main">
+      <div class="container">
+        <%- include('blocks/intro.ejs') %>
+
+        <article class="post">
+          <h1 class="post-title"><%= title %></h1>
+          <% if (date) { %>
+          <div class="post-date"><small><%= date %></small></div>
+          <% } %>
+
+          <div class="post-body"><%- content %></div>
+        </article>
+      </div>
+    </main>
+
+    <script src="/js/decrypt.js"></script>
+  </body>
+</html>

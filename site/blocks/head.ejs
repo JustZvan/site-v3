@@ -1,0 +1,139 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JustZvan</title>
+
+<style>
+  @font-face {
+    font-family: "Pencil Child";
+    src: url("/fonts/Pencil Child.otf");
+  }
+
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/JetBrains Mono.ttf");
+  }
+
+  :root {
+    --bg: #000;
+    --fg: #fff;
+    --blue-400: #60a5fa;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "JetBrains Mono", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: oklch(62.3% 0.214 259.815);
+    text-decoration: none;
+  }
+
+  .nav {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .layout-main {
+    height: 100vh;
+    width: 100vw;
+    color: var(--fg);
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem; /* equivalent to pt-8 */
+    box-sizing: border-box;
+  }
+
+  .smaller-text {
+    font-size: 0.875rem;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* gap-8 */
+    max-width: 64rem; /* approx. max-w-5xl */
+    padding: 2.5rem; /* p-10 */
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-title {
+    font-size: 9rem; /* approximate text-9xl */
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .font-pencil-child {
+    /* preserve existing font helper class; user can override with a webfont */
+    font-family: "Pencil Child", cursive, monospace;
+  }
+
+  .subtitle {
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+
+  .socials {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* gap-2 */
+    font-size: 2rem; /* approximate text-4xl */
+    line-height: 1;
+  }
+
+  .social-link,
+  .social-button {
+    width: 52px; /* approx h-13 w-13 */
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .white-svg {
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg) brightness(2);
+  }
+
+  .section-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 0.5rem;
+  }
+
+  .list {
+    list-style: disc inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
+
+  .link-blue {
+    color: var(--blue-400);
+  }
+</style>

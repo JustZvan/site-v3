@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('blocks/head.ejs') %>
+  </head>
+  <body>
+    <main class="layout-main">
+      <div class="container">
+        <%- include('blocks/intro.ejs') %>
+
+        <div>
+          <div class="section-title">ABOUT</div>
+          <div>
+            I'm not good at writing these so I'm just gonna make a list.
+            <ul class="list">
+              <li>i like coding and playing basketball in my free time</li>
+              <li>i'm from croatia</li>
+              <li>
+                i joined
+                <a href="https://hackclub.com" class="link-blue"> hack club </a>
+                on aug 20
+              </li>
+              <li>
+                i love video games, especially osu!, geometry dash, factorio,
+                satisfactory and other factory automation games!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">PROJECTS</div>
+
+          <ul class="list">
+            <li>
+              <a
+                href="https://osu.justzvan.xyz"
+                target="_blank"
+                rel="noreferrer"
+                class="link-blue"
+              >
+                osu.js</a
+              >
+              - a port of osu to the web browser!
+            </li>
+            <li>
+              <a
+                href="https://github.com/JustZvan/GWEM"
+                target="_blank"
+                rel="noreferrer"
+                class="link-blue"
+              >
+                GWEM</a
+              >
+              - the great windows environment manager - sorta like
+              <a
+                href="https://asdf-vm.com"
+                class="link-blue"
+                target="_blank"
+                rel="noreferrer"
+              >
+                asdf</a
+              >
+              but for windows!
+            </li>
+            <li>
+              <a
+                href="https://github.com/TagifyProject/Tagify/"
+                target="_blank"
+                rel="noreferrer"
+                class="link-blue"
+              >
+                Tagify</a
+              >
+              - a powerful automatic (using ai) file tagger for windows!
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- For the email deobfuscation, read the source if you don't trust me -->
+    <script src="/js/decrypt.js"></script>
+  </body>
+</html>
